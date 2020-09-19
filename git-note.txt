@@ -1,0 +1,21 @@
+﻿<!-- Everytime create a blank pj with 
+    	1. git init
+    	2. add file README.md 
+    	3. git status: check pj status (files tracked or untracked)
+	4. git log: hiển thị list commit (tùy vào độ dài mh cmd mà số lượng commit hiển thị ra khác nhao :) vãi loz
+	5. git show + commit id: hiển thị detail commit
+	6. git diff: hiển thị các thay đổi của các files đã commit
+	7. git checkout -- tên file: xóa thay đổi trong file mới bị chỉnh sửa
+	8. git reset: undo cho tới cái commit đầu tiên nuôn :v
+	- git reset HEAD tên file: undo 1 file mới add lên stagearea			
+	- git reset --soft idcommit: undo tới cái commit mình muốn giữ lại (các file đc undo đưa về trạng thái trc khi commit, vẫn onstage rồi)
+	- git reset --mixed idcommit: undo các commit về trạng thái offstage luôn (chưa add luôn nên phải add lại)
+	- git reset --hard idcommit: xóa cmn hết các file trong các commit trên đường đi của nó trc khi gặp idcommit (mấy kia còn keep đc file để track)
+	9. git revert idcommit: xóa bất kì commit nào cái nào thêm vào sẽ đc xóa ra khỏi file trong commit đc chỉ định
+	- gõ :x! để out khỏi revert mode
+	10. Thêm file .gitignore: bên trong viết tên các file (folder) ko muốn commit lên git, các file này chưa đc commit lần nào
+	11. git remote add origin linkrepos: connect repos trên github với git 
+	12. git push -u origin master: push lần đầu tiên vào 1 repos trên github
+	13. git clone linkrepos: clone repos về máy
+	14. git push origin <tab cái là ra tên branch>
+	15. git rebase -> fix conflict -> git rebase --continue ->add + push: tự động update lại history và gittree (như hồi lần làm là có commit fix conflict sau khi merge, này ko cần)
